@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: inline-flex;
+  background-color: black;
+  padding: 10px 16px;
+  width: 100%;
+  overflow: hidden;
+}
+.navbar a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: orange;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropbtn {
+  margin-top: 10px;
+  color: orange;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: inline-block;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.drop-content a {
+  float: none;
+  color: orange;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbar a:hover {
+  color: white;
+}
+.drop-content a :hover {
+  color: #fff;
+}
+.dropbtn:hover {
+  color: white;
+}
+.dropdown:hover > .dropbtn {
+  color: #fff;
+}
+.dropdown:hover .drop-content {
+  display: block;
+}
