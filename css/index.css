@@ -47,6 +47,29 @@ input {
 }
 .search-box {
   border: 2px solid yellowgreen;
+  height: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  /* margin-top: 100px;
+  margin-bottom: 120;
+  margin-left: 150px;
+  margin-right: 200px; */
+  /* margin: top-bottom left-right; */
+  /* margin: top right bottom left; */
+  margin: 80px 100px 40px 50px;
+}
+.search-box .input2 {
+  border: none;
+  outline: none;
+  width: 90%;
+  background-color: aqua;
+  /* border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; */
+}
+.search-box .search-button {
+  width: 10%;
+  /* border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px; */
 }
 
 .search-button {
