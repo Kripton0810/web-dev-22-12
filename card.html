@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent div {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: 4px;
+      }
+      .parent div:nth-child(3n + 1) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        html
+        body
+        head
+        title
+        style
+
+        div
+        input -> attr
+        span -> text display
+        button -> Button, Submit, Reset
+        form -> ** 
+        label -> while using a input it help to give a title
+        ul/ol -> unordered list / ordered list
+        li   -> list item
+        ::before & ::after -> pseudo elements
+
+        select + option  
+        datalist
+        table -> tr (row) + th/td (cell)
+        iframe -> embed another webpage in our page
+
+        details + summary
+        
+        header/ footer/ nav
+
+        video + audio
+        img
+
+        em, i, b, mark, u, font, sup, sub, strick, strong,
+        small,
+
+        textarea
+
+
+    -->
+    <form action="">
+      <label for="fname">First Name</label>
+      <input type="text" placeholder="first name" name="fname" id="fname" />
+      <label for="mname">Middle Name</label>
+      <input type="text" placeholder="middle name" name="mname" id="mname" />
+      <label for="lname">Last Name</label>
+      <input type="text" placeholder="last name" name="lname" id="lname" />
+      <br />
+      <br />
+      <label for="phoneno">Phone Number</label>
+      <input type="number" name="phno" id="phoneno" />
+      <br />
+      <br />
+      <span>Gender: </span>
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="others">Others</label>
+      <input type="radio" id="others" name="gender" value="others" />
+      <br />
+      <br />
+      <label for="country">Country: </label>
+      <select name="country" id="country">
+        <option value="">None</option>
+        <optgroup label="ASIA">
+          <option value="india">India</option>
+          <option value="singapore">Singapore</option>
+          <option value="nepal">Nepal</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="uk">UK</option>
+          <option value="london">London</option>
+        </optgroup>
+        <optgroup label="America">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <label for="city"> City: </label>
+      <input list="cities" name="city" id="city" />
+      <datalist id="cities">
+        <option value="jamshedpur">Jamshedpur</option>
+        <option value="golmuri">Golmuri</option>
+        <option value="delhi">Delhi</option>
+        <option value="noida">Noida</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="varanasi">Varanasi</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="bokaro">Bokaro</option>
+        <option value="gaya">Gaya</option>
+      </datalist>
+      <br />
+      <br />
+      <span>My Relation: </span>
+      <label for="school">School</label>
+      <input type="checkbox" name="school" id="school" />
+      <label for="college">College</label>
+      <input type="checkbox" name="college" id="college" />
+      <label for="neighborhood">Neighborhood</label>
+      <input type="checkbox" name="neighborhood" id="neighborhood" />
+      <label for="bloodrel">Blood Relation</label>
+      <input type="checkbox" name="bloodrel" id="bloodrel" />
+      <label for="friends">Friends</label>
+      <!-- checked is used to default or pre-check a box -->
+      <input type="checkbox" name="friends" id="friends" checked />
+    </form>
+  </body>
+</html>
